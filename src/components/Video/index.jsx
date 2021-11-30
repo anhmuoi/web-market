@@ -1,5 +1,6 @@
 import React from 'react';
 import video1 from '../../images/video1.png';
+import error from '../../images/error.png';
 
 function Video(props) {
   return (
@@ -12,6 +13,7 @@ function Video(props) {
           SEE MORE
         </a>
         <img className="video__center" alt="" src={video1}></img>
+        <img  className='video__error' alt='' src={error} />
       </div>
     </div>
   );

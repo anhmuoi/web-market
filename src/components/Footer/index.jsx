@@ -12,7 +12,7 @@ function Footer(props) {
             <div className="footer__title footer__happen">
               <p>what happened</p>
             </div>
-            <div className="footer__content">
+            <div className="footer__content footer__textLeft">
               <p>[공지] 개인 정보 처리 방침 변경 사전 안내 </p>
               <p>[공지] 29CM 강남 스토어 영업 종료 </p>
               <p>[공지] 개인 정보 처리 방침 변경 사전 안내</p>

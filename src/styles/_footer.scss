@@ -1,9 +1,8 @@
 .footer {
-  color: $black;
-  padding-bottom: 70px;
+  padding-bottom: 113px;
 
   &__container {
-    max-width: 1725px;
+    max-width: 1718px;
     padding-top: 50px;
     margin: 0 auto;
     border-top: 1px solid #d5d3d3;
@@ -21,20 +20,26 @@
   }
   &__title {
     p {
-      font-weight: bold;
+      font-weight: 600;
+      color: $black;
       font-size: 14px;
       line-height: calc(40 / 14);
     }
   }
   &__happen {
     p {
+      font-weight: bold;
       line-height: calc(30 / 14);
       margin-bottom: 25px;
     }
   }
+  &__textLeft {
+    color: $black;
+  }
   &__content {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
+    color: $black-Four;
     line-height: calc(30 / 14);
     font-family: $secondary-font;
   }
@@ -59,7 +64,7 @@
   &__bottomLeft {
     font-size: 14px;
     font-weight: 300;
-    color: #a9a9a9;
+    color: $greyish;
     line-height: calc(24 / 14);
     p {
       span {
@@ -73,7 +78,7 @@
     height: 22px !important;
   }
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 1550px) {
     &__container {
       max-width: 1254px;
     }
@@ -139,10 +144,8 @@
     }
   }
   @media screen and (max-width: 374px) {
-  
     &__container {
       max-width: 310px;
     }
-    
   }
 }

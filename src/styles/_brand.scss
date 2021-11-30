@@ -1,12 +1,10 @@
 .brand {
-  
-
   color: $black;
   padding-top: 120px;
   padding-bottom: 170px;
   background-image: url(../images/brand2.png);
   background-repeat: no-repeat;
-  background-color: $bg-brand-color;
+  background-color: $cerulean;
   &__container {
     max-width: 1250px;
     margin: 0 auto;
@@ -18,7 +16,7 @@
     font-weight: 700;
     font-size: 45px;
     line-height: calc(60 / 45);
-    color: $brand-color-font;
+    color: $sun-yellow;
     margin-bottom: 30px;
   }
   &__text {
@@ -26,7 +24,7 @@
     font-size: 14px;
     line-height: calc(30 / 16);
     font-family: $secondary-font;
-    color: $brand-color-font;
+    color: $sun-yellow;
 
     text-align: center;
 
@@ -41,26 +39,29 @@
   }
   &__story {
     position: absolute;
-    left: 50%;
-    top: 85px;
+    right: 68px;
+    top: 63px;
     width: 535px;
     margin-left: 45px;
   }
   &__story__title {
-    margin-bottom: 35px;
+    margin-bottom: 39px;
     font-weight: 800;
     font-size: 25px;
+    color: $black;
   }
   &__story__content {
-    font-weight: 600;
-    font-size: 15px;
-    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 47px;
     line-height: 2;
+    color: $black-three;
+    font-family: $secondary-font;
   }
   &__button {
     padding: 23px 40px;
-    border: 3px solid $black;
-    color: $black;
+    border: 3px solid $black-three;
+    color: $black-three;
     font-weight: 900;
     font-size: 20px;
     line-height: calc(30 / 16);
@@ -68,7 +69,6 @@
     cursor: pointer;
     transition: all 0.3s ease;
     &:hover {
-     
     }
   }
   @media screen and (max-width: 1279px) {
@@ -96,19 +96,15 @@
       font-size: 15px;
       margin-bottom: 30px;
       width: 500px;
-   
     }
     &__button {
       padding: 10px 20px;
-    
+
       font-weight: 900;
       font-size: 20px;
- 
     }
   }
   @media screen and (max-width: 1023px) {
-
-
     padding-top: 50px;
     &__center {
       margin-top: 45px;
@@ -134,18 +130,15 @@
       font-size: 10px;
       margin-bottom: 10px;
       width: 300px;
-   
     }
     &__button {
       padding: 10px 15px;
-    
+
       font-weight: 900;
       font-size: 20px;
- 
     }
   }
   @media screen and (max-width: 767px) {
-
     background-image: none;
     padding-top: 25px;
     padding-bottom: 50px;
@@ -156,13 +149,11 @@
       img {
         max-width: 375px;
       }
- 
     }
     &__text {
       max-width: 350px;
     }
     &__story {
-
       left: 40%;
       top: 15px;
       width: 150px;
@@ -170,7 +161,7 @@
     }
     &__story__title {
       margin-bottom: 5px;
-      width: 150px!important;;
+      width: 150px !important;
       font-weight: 800;
       font-size: 15px;
     }
@@ -178,23 +169,20 @@
       font-weight: 600;
       font-size: 5px;
       margin-bottom: 8px;
-     
+
       width: 175px;
-   
     }
     &__button {
       padding: 5px 10px;
-    
+
       font-weight: 900;
       font-size: 10px;
- 
     }
   }
   @media screen and (max-width: 374px) {
     padding-top: 20px;
     &__title {
       font-size: 25px;
-      
     }
     &__center {
       margin-top: 45px;
@@ -208,7 +196,6 @@
       font-size: 10px;
     }
     &__story {
-    
       left: 37%;
       top: 15px;
       width: 150px;
@@ -216,7 +203,7 @@
     }
     &__story__title {
       margin-bottom: 5px;
-      width: 150px!important;;
+      width: 150px !important;
       font-weight: 800;
       font-size: 10px;
     }
@@ -224,21 +211,17 @@
       font-weight: 600;
       font-size: 5px;
       margin-bottom: 25px;
-     
+
       width: 150px;
-   
     }
     &__button {
-     
       padding: 5px 10px;
- 
+
       font-weight: 900;
       font-size: 10px;
 
       color: white;
-      border: 3px solid white!important;;
- 
+      border: 3px solid white !important;
     }
   }
-  
 }

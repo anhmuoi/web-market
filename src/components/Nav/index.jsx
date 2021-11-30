@@ -1,23 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../images/logo.png';
 
-
 function Nav(props) {
-  // const [showNavGray, setShowNavGray] = useState(false);
-
-  // const transitionNavBar = () =>{
-  //     if(window.scrollY < 100)
-  //     {
-  //         setShowNavGray(false);
-  //     }
-  //     else{
-  //         setShowNavGray(true);
-  //     }
-  // };
-  // useEffect(()=>{
-  //     window.addEventListener('scroll', transitionNavBar);
-  //     return () => window.removeEventListener('scroll', transitionNavBar);
-  // }, [])
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <div className="nav">
       <div className="nav__container">
@@ -34,7 +19,40 @@ function Nav(props) {
           <a href="/#">APPLY FOR FREE USE</a>
         </div>
         <div className="nav__menu">
-          <ion-icon name="menu"></ion-icon>
+          <div onClick={() => setShowMenu(true)}>
+            <ion-icon style={{ color: 'white' }} name="menu"></ion-icon>
+          </div>
+
+          <ul className={`menu ${showMenu ? 'menu__is-show' : ''}`}>
+            <div onClick={() => setShowMenu(false)}>
+              <ion-icon name="close-circle" className="menu__close"></ion-icon>
+            </div>
+            <li className="menu-item">
+              <a href="/#" className="menu__link">
+                INTRODUCTION
+              </a>
+            </li>
+            <li className="menu-item">
+              <a href="/#" className="menu__link">
+                SOLUTION
+              </a>
+            </li>
+            <li className="menu-item">
+              <a href="/#" className="menu__link">
+                RATE PLAN
+              </a>
+            </li>
+            <li className="menu-item">
+              <a href="/#" className="menu__link">
+                LOGIN
+              </a>
+            </li>
+            <li className="menu-item">
+              <a href="/#" className="menu__link">
+                APPLY FOR FREE USE
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

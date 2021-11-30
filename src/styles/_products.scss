@@ -1,7 +1,4 @@
 .product {
-  
-
-  color: $black;
   padding: 140px 0px;
   &__container {
     max-width: 1573px;
@@ -32,15 +29,16 @@
     font-weight: 600;
     font-size: 18px;
     line-height: calc(35 / 18);
+    color: $black-three;
   }
   &__bottom {
     display: flex;
     justify-content: space-between;
   }
   &__price {
+    color: $black-three;
     font-weight: 400;
     font-size: 16px;
-   
   }
   &__like {
     display: flex;
@@ -49,7 +47,7 @@
     p {
       font-weight: 400;
       font-size: 16px;
-     
+      color: $brownish-grey;
     }
   }
   &__button {
@@ -58,59 +56,46 @@
     font-weight: 800;
     line-height: calc(25 / 23);
     font-size: 23px;
-    border: 3px solid $black;
-    color: $black;
+    border: 3px solid $black-three;
+    color: $black-three;
   }
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 1550px) {
     &__container {
-    
-        &__img {
-         
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(6, 1fr);
-          grid-gap: 70px 18px;
-   
-        }
+      &__img {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 70px 18px;
       }
+    }
   }
 
   @media screen and (max-width: 1279px) {
     &__container {
-    
-        &__img {
-         
-          grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(9, 1fr);
-          grid-gap: 70px 18px;
-   
-        }
+      &__img {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-gap: 70px 18px;
       }
+    }
   }
   @media screen and (max-width: 1023px) {
     &__container {
-    
-        &__img {
-         
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: repeat(13, 1fr);
-          grid-gap: 70px 18px;
-   
-        }
+      &__img {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+        grid-gap: 70px 18px;
       }
+    }
   }
   @media screen and (max-width: 767px) {
     padding: 50px 0;
     &__container {
-    
-        &__img {
-         
-          grid-template-columns: repeat(1, 1fr);
-          grid-template-rows: repeat(25, 1fr);
-          grid-gap: 70px 18px;
-   
-        }
+      &__img {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(25, 1fr);
+        grid-gap: 70px 18px;
       }
+    }
   }
-  
 }

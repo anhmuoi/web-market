@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
 
   color: $black;
-  padding-bottom: 350px;
+  padding-bottom: 147px;
   &__container {
     display: flex;
     flex-direction: column;
@@ -34,12 +34,17 @@
     font-weight: 800;
     font-size: 25px;
     line-height: calc(25 / 23);
-    border: 3px solid $black;
-    color: $black;
+    border: 3px solid $black-three;
+    color: $black-three;
   }
   &__center {
     margin-top: 55px;
     max-width: 1250px;
+  }
+  &__error {
+    width: 410px;
+    margin-top: 42px;
+    transform: translateX(-100%);
   }
   @media screen and (max-width: 1280px) {
     &__center {
@@ -59,9 +64,8 @@
       font-weight: 800;
       font-size: 17px;
     }
-   
   }
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1024px) {
     padding-bottom: 150px;
     background-image: none;
     &__center {
@@ -73,10 +77,13 @@
       font-weight: 800;
       font-size: 17px;
     }
+    &__error {
+      display: none;
+    }
   }
   @media screen and (max-width: 767px) {
     padding-bottom: 100px;
-  
+
     &__center {
       margin-top: 30px;
       max-width: 370px;
@@ -87,20 +94,16 @@
       font-size: 17px;
     }
     &__title {
-      
       font-size: 45px;
- 
+
       max-width: 370px;
       margin-bottom: 20px;
       margin-top: 100px;
     }
     &__desc {
-    
       font-size: 20px;
 
-  
       max-width: 370px;
-  
     }
     &__desc2 {
       margin-bottom: 45px;
@@ -108,35 +111,30 @@
   }
   @media screen and (max-width: 374px) {
     padding-bottom: 50px;
-  
+
     &__center {
       margin-top: 30px;
       max-width: 310px;
     }
     &__button {
       padding: 15px 30px;
-     
+
       font-size: 17px;
     }
     &__title {
-      
       font-size: 45px;
- 
+
       max-width: 320px;
       margin-bottom: 20px;
       margin-top: 50px;
     }
     &__desc {
-    
       font-size: 20px;
-    
-  
+
       max-width: 310px;
-  
     }
     &__desc2 {
       margin-bottom: 45px;
     }
   }
-  
 }

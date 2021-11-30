@@ -1,10 +1,7 @@
 .issue {
-
-
-  background-color: $brand-color-font;
+  background-color: $goldenrod;
   padding-top: 154px;
   padding-bottom: 143px;
-  color: $black;
   position: relative;
   overflow: hidden;
   &__container {
@@ -15,15 +12,16 @@
   &__title {
     font-weight: bold;
     font-size: 45px;
+    color: $dark-brown;
     line-height: calc(60 / 45);
     width: 525px;
     margin-bottom: 30px;
     text-align: center;
-   
   }
   &__desc {
     font-weight: 300;
     font-size: 16px;
+    color: $dark-brown;
     line-height: calc(30 / 16);
     font-family: $secondary-font;
     width: 690px;
@@ -39,12 +37,11 @@
     font-weight: 800;
     font-size: 25px;
     line-height: calc(25 / 23);
-    border: 3px solid $black;
-    color: $black;
+    border: 3px solid $black-three;
+    color: $black-three;
   }
   &__list {
     margin-top: 125px;
-    
   }
   &__xx1 {
     position: absolute;
@@ -72,7 +69,7 @@
     transform: translateY(50%);
     right: 10%;
 
-    overflow: hidden!important;
+    overflow: hidden !important;
   }
   &__hot {
     position: absolute;
@@ -84,30 +81,27 @@
     &__img {
       display: flex;
       overflow-x: auto;
-      
+
       scroll-snap-type: x mandatory;
       img {
         margin: 90px 0;
         scroll-snap-align: start;
       }
     }
-   
   }
   @media screen and (max-width: 1023px) {
     &__list {
       margin-top: 30px;
-      
     }
     &__xx1 {
-     transform: scale(0.7);
+      transform: scale(0.7);
     }
     &__xx2 {
-      
       transform: scale(0.7);
       top: 130px;
     }
   }
-  
+
   @media screen and (max-width: 767px) {
     padding-top: 130px;
     padding-bottom: 0px;
@@ -118,47 +112,41 @@
       transform: scale(0.5);
       top: 0px;
       right: 10px;
-     }
-     &__xx2 {
-       
-       transform: scale(0.5);
-       top: 50px;
-       right: 0;
-     }
-     &__title {
-         font-size: 30px;
-     
+    }
+    &__xx2 {
+      transform: scale(0.5);
+      top: 50px;
+      right: 0;
+    }
+    &__title {
+      font-size: 30px;
+
       max-width: 525px;
       margin-bottom: 30px;
-    
-     
     }
     &__desc {
       font-weight: 300;
       font-size: 12px;
-     
+
       max-width: 400px;
-    
+
       padding: 0 20px;
     }
-  
+
     &__desc2 {
       margin-bottom: 40px;
     }
-  
+
     &__button {
       padding: 20px 30px;
-     
+
       font-size: 25px;
-     
+
       border: 3px solid $black;
       color: $black;
     }
     &__list {
       margin-top: 0px;
-      
     }
   }
-  
-  
 }
