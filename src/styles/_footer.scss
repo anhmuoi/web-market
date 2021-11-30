@@ -1,0 +1,148 @@
+.footer {
+  color: $black;
+  padding-bottom: 70px;
+
+  &__container {
+    max-width: 1725px;
+    padding-top: 50px;
+    margin: 0 auto;
+    border-top: 1px solid #d5d3d3;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #d5d3d3;
+  }
+
+  &__topLeft {
+  }
+  &__title {
+    p {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: calc(40 / 14);
+    }
+  }
+  &__happen {
+    p {
+      line-height: calc(30 / 14);
+      margin-bottom: 25px;
+    }
+  }
+  &__content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(30 / 14);
+    font-family: $secondary-font;
+  }
+  &__topRight {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 100px;
+  }
+  &__topRight1 {
+  }
+  &__topRight2 {
+  }
+  &__topRight3 {
+  }
+  &__topRight4 {
+  }
+  &__bottom {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottomLeft {
+    font-size: 14px;
+    font-weight: 300;
+    color: #a9a9a9;
+    line-height: calc(24 / 14);
+    p {
+      span {
+        font-family: $secondary-font;
+      }
+    }
+  }
+  &__bottomRight {
+    display: flex;
+    gap: 25px;
+    height: 22px !important;
+  }
+
+  @media screen and (max-width: 1440px) {
+    &__container {
+      max-width: 1254px;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    padding-bottom: 50px;
+    &__container {
+      max-width: 900px;
+    }
+    &__topRight {
+      grid-gap: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding-bottom: 50px;
+    &__container {
+      max-width: 700px;
+    }
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+    &__topRight {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+    }
+    &__bottomLeft {
+      font-size: 14px;
+      max-width: 550;
+      p {
+        max-width: 550;
+        span {
+          max-width: 550;
+          display: block;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 20px;
+    &__container {
+      max-width: 350px;
+    }
+    &__top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+    &__topRight {
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: repeat(4, auto);
+      grid-gap: 30px 0px;
+    }
+    &__bottom {
+      padding-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  @media screen and (max-width: 374px) {
+  
+    &__container {
+      max-width: 310px;
+    }
+    
+  }
+}

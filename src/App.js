@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+
+import BestProducts from './components/BestProducts/index.jsx';
+import Brand from './components/Brand/index.jsx';
+import Introduction from './components/Introduction/index.jsx';
+import MainBanner from './components/MainBanner/index.jsx';
+import Nav from './components/Nav/index.jsx';
+import Products from './components/Products/index.jsx';
+import Issue from './components/Issue/index.jsx';
+import './styles/app.scss';
+import Video from './components/Video/index.jsx';
+import Footer from './components/Footer/index.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <MainBanner />
+      <Introduction />
+      <BestProducts />
+      <Products />
+      <Brand />
+      <Issue />
+      <Video />
+      <Footer />
     </div>
   );
 }

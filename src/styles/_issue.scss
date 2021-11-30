@@ -1,0 +1,164 @@
+.issue {
+
+
+  background-color: $brand-color-font;
+  padding-top: 154px;
+  padding-bottom: 143px;
+  color: $black;
+  position: relative;
+  overflow: hidden;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: calc(60 / 45);
+    width: 525px;
+    margin-bottom: 30px;
+    text-align: center;
+   
+  }
+  &__desc {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    font-family: $secondary-font;
+    width: 690px;
+    text-align: center;
+  }
+
+  &__desc2 {
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    padding: 24px 40px;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: calc(25 / 23);
+    border: 3px solid $black;
+    color: $black;
+  }
+  &__list {
+    margin-top: 125px;
+    
+  }
+  &__xx1 {
+    position: absolute;
+    top: 42px;
+    right: 70px;
+  }
+  &__xx2 {
+    position: absolute;
+    right: 70px;
+    top: 160px;
+  }
+  &__img {
+    display: flex;
+    position: relative;
+  }
+  &__coin {
+    position: absolute;
+    left: 230px;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+  &__lol {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    right: 10%;
+
+    overflow: hidden!important;
+  }
+  &__hot {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    left: 410px;
+  }
+  @media screen and (max-width: 1440px) {
+    &__img {
+      display: flex;
+      overflow-x: auto;
+      
+      scroll-snap-type: x mandatory;
+      img {
+        margin: 90px 0;
+        scroll-snap-align: start;
+      }
+    }
+   
+  }
+  @media screen and (max-width: 1023px) {
+    &__list {
+      margin-top: 30px;
+      
+    }
+    &__xx1 {
+     transform: scale(0.7);
+    }
+    &__xx2 {
+      
+      transform: scale(0.7);
+      top: 130px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    padding-top: 130px;
+    padding-bottom: 0px;
+    &__lol {
+      display: none;
+    }
+    &__xx1 {
+      transform: scale(0.5);
+      top: 0px;
+      right: 10px;
+     }
+     &__xx2 {
+       
+       transform: scale(0.5);
+       top: 50px;
+       right: 0;
+     }
+     &__title {
+         font-size: 30px;
+     
+      max-width: 525px;
+      margin-bottom: 30px;
+    
+     
+    }
+    &__desc {
+      font-weight: 300;
+      font-size: 12px;
+     
+      max-width: 400px;
+    
+      padding: 0 20px;
+    }
+  
+    &__desc2 {
+      margin-bottom: 40px;
+    }
+  
+    &__button {
+      padding: 20px 30px;
+     
+      font-size: 25px;
+     
+      border: 3px solid $black;
+      color: $black;
+    }
+    &__list {
+      margin-top: 0px;
+      
+    }
+  }
+  
+  
+}
